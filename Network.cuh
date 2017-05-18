@@ -431,6 +431,12 @@ namespace Myelin
 		{
 		}
 
+		Network() :
+			in_size( {0,0,0} ),
+			out_size( { 0,0,0 } )
+		{
+		}
+
 		void add_layer( Layers::ILayer* layer )
 		{
 			assert( !finished );
