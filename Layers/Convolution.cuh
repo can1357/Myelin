@@ -192,7 +192,7 @@ namespace Myelin
 
 								const int x_add = (pin.x - iminx);
 
-								int w_applied = base_filtery[x_add];
+								float w_applied = base_filtery[x_add];
 								float g_next = grad_next_layer[i + j*o_x + f*o_xy];
 								sum_error += w_applied * g_next;
 							}
